@@ -1,6 +1,6 @@
 extern crate pkg_config;
 
 fn main() {
-    #[cfg(not(feature = "dlopen"))]
-    pkg_config::Config::new().find("xkbcommon").unwrap();
+    // #[cfg(all(not(feature = "dlopen")), feature = "xkbcommon")]
+    // pkg_config::Config::new().find("xkbcommon").unwrap();
 }
